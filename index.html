@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stick Figure Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="toolbar">
+    <div class="group">
+      <span class="brand">Stick Figure <b>Studio</b></span>
+      <span id="film-name" class="film" title="Film and shot settings"></span>
+    </div>
+
+    <div class="group">
+      <button id="btn-new" title="New film">New ▾</button>
+      <button id="btn-open" title="Open a project, a v1 animation or a character file">Open</button>
+      <button id="btn-save" title="Download the project (Ctrl+S)">Save</button>
+    </div>
+
+    <div class="group">
+      <button id="btn-undo" title="Undo (Ctrl+Z)">Undo</button>
+      <button id="btn-redo" title="Redo (Ctrl+Y)">Redo</button>
+    </div>
+
+    <div class="group">
+      <button id="tg-camera" class="toggle" title="Switch between what the audience sees and the whole set (C)">Camera view</button>
+      <button id="btn-fit" title="Fit the stage in the window (F)">Fit</button>
+    </div>
+
+    <div class="spacer"></div>
+    <button id="btn-export" class="primary" title="Export (Ctrl+E)">Export</button>
+    <input id="file-input" type="file" accept=".json,application/json" hidden>
+  </header>
+
+  <nav id="scenes-bar"></nav>
+
+  <div id="workspace">
+    <aside id="left">
+      <div class="tabs">
+        <button class="tab current" data-tab="layers">Layers</button>
+        <button class="tab" data-tab="library">Library</button>
+      </div>
+      <div id="layers" class="panel-body"></div>
+      <div id="library" class="panel-body" hidden></div>
+    </aside>
+
+    <main id="stage-wrap">
+      <canvas id="stage"></canvas>
+      <div id="stage-hud"></div>
+    </main>
+
+    <aside id="right">
+      <div id="inspector" class="panel-body"></div>
+    </aside>
+  </div>
+
+  <section id="timeline">
+    <div id="tl-resize" title="Drag to resize"></div>
+    <div id="tl-bar">
+      <div class="group">
+        <button id="btn-first" title="Start (Home)">⏮</button>
+        <button id="btn-prevkey" title="Previous key (,)">◂◆</button>
+        <button id="btn-play" class="primary" title="Play / pause (Space)">▶</button>
+        <button id="btn-nextkey" title="Next key (.)">◆▸</button>
+        <button id="btn-last" title="End (End)">⏭</button>
+        <span id="tl-time" class="time"></span>
+      </div>
+      <div class="group">
+        <button id="tg-autokey" class="toggle rec" title="Auto-key: every change writes a key on just that property (A)">● Auto-key</button>
+        <button id="btn-keyall" title="Key the whole pose of the selection (K)">◆ Key pose</button>
+        <label class="inline">New keys <select id="tl-ease" title="Easing given to new keys"></select></label>
+      </div>
+      <div class="group">
+        <button id="tg-loop" class="toggle" title="Loop playback">Loop</button>
+        <button id="tg-onion" class="toggle" title="Onion skin: ghost of the previous (red) and next (blue) key (O)">Onion</button>
+        <button id="tg-paths" class="toggle" title="Motion path of the selection: one dot per frame">Paths</button>
+        <button id="btn-marker" title="Add or rename a marker at the playhead (M)">⚑ Marker</button>
+      </div>
+      <div class="spacer"></div>
+      <div class="group">
+        <button id="btn-tlfit" title="Fit the whole shot">Fit</button>
+        <input id="tl-zoom" type="range" min="-0.2" max="3.8" step="0.01" value="1.8" title="Timeline zoom (Ctrl+wheel)">
+      </div>
+    </div>
+    <div id="tl-head"><div id="tl-corner">Tracks</div><canvas id="tl-ruler"></canvas></div>
+    <div id="tl-scroll"><div id="tl-labels"></div><canvas id="tl-tracks"></canvas></div>
+  </section>
+
+  <div id="modal-root"></div>
+  <div id="toast"></div>
+
+  <script src="js/core.js"></script>
+  <script src="js/model.js"></script>
+  <script src="js/rig.js"></script>
+  <script src="js/draw-character.js"></script>
+  <script src="js/draw-front.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/library.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/actions.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/stage.js"></script>
+  <script src="js/timeline.js"></script>
+  <script src="js/panels.js"></script>
+  <script src="js/export.js"></script>
+  <script src="js/bridge.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
