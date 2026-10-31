@@ -18,6 +18,18 @@
   const PAL = L.PAL, INK = L.INK;
 
   // ---------------------------------------------------------------------------
+  // Characters
+  // ---------------------------------------------------------------------------
+
+  // Built from a reference photo: big wild dark curls, round wire glasses, full beard, thick brows,
+  // green-hazel eyes, off-white crew-neck tee, jeans, white sneakers.
+  S.custom.character('billy', {
+    name: 'Billy', hair: 'wild', facial: 'full', glasses: 'round', brows: 'thick', headShape: 'oval', sleeves: 'short',
+    colors: { skin: '#dcae86', hair: '#2e2019', shirt: '#ece8df', pants: '#2f3b52', shoes: '#f1efe9', eyes: '#7d8f4e', glasses: '#3a3633', outline: INK },
+    lengths: { head: 98 },
+  });
+
+  // ---------------------------------------------------------------------------
   // Street furniture and traffic (side view, facing right; flip to face left)
   // ---------------------------------------------------------------------------
 

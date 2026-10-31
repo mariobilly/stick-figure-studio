@@ -7,6 +7,27 @@ And you can direct it in plain language: an MCP server lets Claude Code build an
 
 ![Stick Figure Studio](docs/screenshot.png)
 
+<!-- videos:start -->
+## See it in action
+
+<table><tr>
+<td width="64%" valign="top"><a href="docs/videos/tutorial.mp4"><img src="docs/videos/tutorial.jpg" alt="Full tutorial"></a><br><b>▶ <a href="docs/videos/tutorial.mp4">Full tutorial</a></b> (5:37, narrated, with captions)</td>
+<td width="36%" valign="top" align="center"><a href="docs/videos/ad.mp4"><img src="docs/videos/ad.gif" alt="25-second reel" width="240"></a><br><b>▶ <a href="docs/videos/ad.mp4">25-second reel</a></b></td>
+</tr></table>
+
+**Films made with it**
+
+<table><tr>
+<td width="50%" align="center"><a href="docs/videos/the-cup.mp4"><img src="docs/videos/the-cup.gif" alt="The Cup"></a><br><a href="docs/videos/the-cup.mp4">The Cup</a></td>
+<td width="50%" align="center"><a href="docs/videos/no-wind.mp4"><img src="docs/videos/no-wind.gif" alt="No Wind"></a><br><a href="docs/videos/no-wind.mp4">No Wind</a></td>
+</tr><tr>
+<td width="50%" align="center"><a href="docs/videos/first-rain.mp4"><img src="docs/videos/first-rain.gif" alt="The First Rain of the Season"></a><br><a href="docs/videos/first-rain.mp4">The First Rain of the Season</a></td>
+<td width="50%" align="center"><a href="docs/videos/billy-intro.mp4"><img src="docs/videos/billy-intro.gif" alt="Billy (intro)"></a><br><a href="docs/videos/billy-intro.mp4">Billy (intro)</a></td>
+</tr></table>
+
+Click any picture to play the video with sound.
+<!-- videos:end -->
+
 **Project → Shots → Objects and characters → Animation tracks**
 
 ## Run
